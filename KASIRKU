@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KasirKu UMKM</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#fffaf5;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#ff7a00;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+}
+
+.menu li{
+    margin-left:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#ffb347,#ff7a00);
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#ff7a00;
+    padding:15px 30px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Features */
+
+.features{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#ff7a00;
+    margin-bottom:10px;
+}
+
+/* About */
+
+.about{
+    background:#fff1e6;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+    color:#ff7a00;
+}
+
+/* Pricing */
+
+.pricing{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.price-card{
+    background:#ff7a00;
+    color:white;
+    display:inline-block;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.price-card h1{
+    font-size:50px;
+    margin:10px 0;
+}
+
+/* Testimonial */
+
+.testimonial{
+    background:#fff1e6;
+    text-align:center;
+    padding:80px 10%;
+}
+
+.testi-box{
+    background:white;
+    display:inline-block;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.menu{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<div class="logo">
+KasirKu UMKM
+</div>
+
+<ul class="menu">
+<li><a href="#fitur">Fitur</a></li>
+<li><a href="#harga">Harga</a></li>
+<li><a href="#testimoni">Testimoni</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>
+Kelola Usaha UMKM Lebih Mudah dengan KasirKu UMKM
+</h1>
+
+<p>
+Catat penjualan, kelola stok, dan pantau keuntungan hanya lewat HP.
+</p>
+
+<a href="#" class="btn">
+Coba Gratis Sekarang
+</a>
+
+</section>
+
+<section id="fitur" class="features">
+
+<h2>Fitur Unggulan</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Kasir Digital</h3>
+<p>Transaksi otomatis dan cepat.</p>
+</div>
+
+<div class="card">
+<h3>Laporan Otomatis</h3>
+<p>Pantau keuntungan realtime.</p>
+</div>
+
+<div class="card">
+<h3>QRIS Payment</h3>
+<p>Pembayaran digital modern.</p>
+</div>
+
+<div class="card">
+<h3>Monitoring Stok</h3>
+<p>Kontrol stok lebih mudah.</p>
+</div>
+
+</div>
+</section>
+
+<section class="about">
+
+<h2>Kenapa KasirKu?</h2>
+
+<p>
+KasirKu membantu UMKM mencatat transaksi, memonitor stok,
+dan melihat keuntungan dengan lebih mudah dan modern.
+</p>
+
+</section>
+
+<section id="harga" class="pricing">
+
+<h2>Paket Harga</h2>
+
+<div class="price-card">
+<h3>Starter</h3>
+<h1>Rp29K</h1>
+<p>/bulan</p>
+<br>
+<a href="#" class="btn">Daftar</a>
+</div>
+
+</section>
+
+<section id="testimoni" class="testimonial">
+
+<h2>Testimoni</h2>
+
+<div class="testi-box">
+<p>
+"Sejak pakai KasirKu, pencatatan usaha jadi lebih rapi dan mudah."
+</p>
+<br>
+<b>- UMKM Kuliner</b>
+</div>
+
+</section>
+
+<footer>
+© 2026 KasirKu UMKM — Solusi Digital UMKM Modern
+</footer>
+
+</body>
+</html>
